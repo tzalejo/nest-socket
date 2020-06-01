@@ -8,6 +8,5 @@ export class AlertGateway {
 
   sendToAll(msg: string){
     this.wss.emit('alertToClient',{type: 'Alert', message: msg});
-    
   }
 }
